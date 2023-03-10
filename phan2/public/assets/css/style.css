@@ -1,0 +1,83 @@
+/* CSS cho Các tuyến */
+.routes {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.route a {
+    color: #666;
+}
+.route:hover .dot {
+    transform: scale(130%);
+    text-shadow: 5px 0;
+    background-color: #cff4fc;
+    border-color: #11caf0;
+}
+.routes .route {
+    min-width: 90px;
+    border-bottom: 4px solid #999;
+}
+.routes .route:last-child {
+    margin-left: 8px;
+}
+.routes .route:last-child .dot {
+    border-color: #11caf0;
+    background-color: #11caf0;
+}
+.routes .route:first-child {
+    border-bottom: none;
+}
+.route .content {
+    margin-bottom: -20px !important;
+}
+.route .title {
+    display: inline-block;
+    transform-origin: left;
+    transform: translate(15px, 10px) rotate(-45deg);
+    font-size: 80%;
+    white-space: nowrap;
+}
+.route .dot {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    border: 3px solid #aaa;
+}
+
+/* .routes .route:hover ~ .route .dot {
+  border-color: #11caf0;
+}
+.routes .route:hover ~ .route {
+  border-color: #11caf0;
+} */
+.routes .route a:focus .dot {
+    border-color: #11caf0;
+    background-color: #11caf0;
+}
+.routes .route:focus-within ~ .route .dot {
+    border-color: #11caf0;
+    background-color: #cff4fc !important;
+}
+.routes .route:focus-within ~ .route {
+    border-color: #11caf0;
+}
+/* /CSS cho Các tuyến */
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+}
+
+.route-box .route-title {
+    box-shadow: 0 0 1px #ccc;
+    transition: padding 0.5s;
+}
+
+.route-box:hover .route-title {
+    font-weight: bold;
+    box-shadow: 0 0 50px #ccc;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.icon-logo {
+    height: 40px;
+}
